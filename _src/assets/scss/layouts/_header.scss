@@ -1,4 +1,7 @@
+
 .logo {
+    margin-top: 0px;
+    margin-left: 0px;
   background-color: #0271bc;
   z-index: 1;
   height: 44px;
@@ -7,6 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  align-self: column-reverse;
 }
 .hero {
   margin-top: 0px;
@@ -16,28 +20,32 @@
   background-position: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
 .list {
-  margin: 284px 15px 143px 15px;
   list-style: none;
   color: white;
   padding: 10px;
+  margin: 0;
+  margin-top: 284px;
+ 
 }
 
-.one {
+.one { 
   text-align: center;
   font-size: 42px;
   font-family: $font-roboto-slab;
   line-height: 55px;
 }
 .twoo {
+
   text-align: center;
   font-size: 42px;
   font-family: $font-roboto-slab;
   line-height: 55px;
+  margin-bottom: 10px;
 }
 
 .holi {
@@ -45,10 +53,13 @@
   text-align: center;
   font-size: 16px;
   font-family: $font-roboto;
+  margin-top: 10px;
+  margin-bottom: 45px;
   
 }
 
 .button_arrow {
+  margin-bottom: 53px;
   height: 45px;
   width: 45px;
   border-radius: 50%;
@@ -57,3 +68,43 @@
   justify-content: center;
 }
 
+@media all and (min-width:768px)
+{
+    .list {
+        margin-top: 384px;
+        margin-left: 39px;
+        margin-right: 39px; 
+    }
+    .one {
+        line-height: 106px;
+        font-size: 80px;
+    }
+    .twoo {
+        line-height: 106px;
+        font-size: 80px;
+    }
+    .holi {
+        margin-top: 20px;
+        font-size: 24px;
+    }
+    .button_arrow {
+        margin-bottom: 45;
+        margin-left: 362px;
+        margin-right: 361px;
+    }
+}
+
+@media all and (min-width:1200px) {
+    .list {
+        margin-left: 275px;
+        margin-right: 275px;
+    }
+    .one {
+        line-height: 132px;
+        font-size: 100px;
+    }
+    .twoo {
+        line-height: 132px;
+        font-size: 100px;
+    }
+}
