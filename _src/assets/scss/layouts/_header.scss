@@ -1,0 +1,59 @@
+.logo {
+  background-color: #0271bc;
+  z-index: 1;
+  height: 44px;
+  width: 44px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero {
+  margin-top: 0px;
+  height: 100vh;
+  background-image: url("../images/cover.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.list {
+  margin: 284px 15px 143px 15px;
+  list-style: none;
+  color: white;
+  padding: 10px;
+}
+
+.one {
+  text-align: center;
+  font-size: 42px;
+  font-family: $font-roboto-slab;
+  line-height: 55px;
+}
+.twoo {
+  text-align: center;
+  font-size: 42px;
+  font-family: $font-roboto-slab;
+  line-height: 55px;
+}
+
+.holi {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-family: $font-roboto;
+  
+}
+
+.button_arrow {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
