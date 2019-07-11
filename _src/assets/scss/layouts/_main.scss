@@ -1,0 +1,88 @@
+.main_container {
+   
+    margin: 0px;
+    height: 376px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 15px 45px 15px;
+}
+.main_texth1 {
+    font-size: 14px;
+    color: #8ccbea;
+    font-family: $font-roboto;
+}
+.main_texth2 {
+    margin-top: 1px;
+    font-size: 24px;
+    color: #000000;
+    font-family: $font-roboto-slab;
+}
+.main_text {
+    margin-top: 15px;
+    font-family: $font-roboto;
+    font-size: 18px;
+    line-height: 30px;
+    color: #4a4a4a;
+    text-align: left;
+}
+.article_list {
+    list-style: none;
+}
+
+.button_go {
+    background-color: white;
+    color: #f26002;
+    font-size: 20px;
+    font-family: $font-roboto;
+    margin-top: 30px;
+    width: 76px;
+    height: 45px;
+    border-radius: 22.5px;
+    border: solid 2px #f26002;
+}
+.article {
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 60px;
+    height: 624px;
+    background-color: #eff9ff;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 45px;
+    grid-template-rows: 30px 93px 93px 93px 45px;
+}
+.article_reason {
+    font-family: $font-roboto-slab;
+    font-size: 24px;
+    text-align: center;
+}
+.reason_list {
+    font-family: $font-roboto-slab;
+    font-size: 18px;
+    text-align: center;
+}
+.reason_item {
+    font-family: $font-roboto;
+    font-size: 18px;
+    text-align: center;
+}
+
+.button_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button_reason {
+    width: 184px;
+    height: 45px;
+    border-radius: 22.5px;
+    background-color: #f26002;
+    font-family: $font-roboto;
+    font-size: 20px;
+    color: white;
+}
+
+/* CORREGIR TIPOGRAFIAASSSSS
+$font-roboto-slab: 'Roboto Slab', serif;
+$font-roboto: 'Roboto', sans-serif; */
