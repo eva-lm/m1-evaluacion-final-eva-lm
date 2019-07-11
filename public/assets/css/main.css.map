@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss","main.css"],"names":[],"mappings":"AAEA;EACC,SAAS;EACT,qBAAqB;ACDtB","file":"main.css","sourcesContent":["@import 'core/variables';\n\nbody {\n\tmargin: 0;\n\tbackground-color: red;\n}\n","body {\n  margin: 0;\n  background-color: red;\n}\n"]}
