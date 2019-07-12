@@ -63,6 +63,7 @@
     height: 45px;
     border-radius: 22.5px;
     border: solid 2px $color-primary;
+    transition: all 3s;
 }
 .button_go:hover {
     background-color: $color-primary;
@@ -114,7 +115,7 @@
     font-family: $font-family;
     font-size: 20px;
     color: $color-light;
-    transition: all 
+    transition: all 3s;
 }
 .button_reason:hover {;
     background-color: $color-light;

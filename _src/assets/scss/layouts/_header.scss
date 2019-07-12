@@ -67,6 +67,10 @@
   align-content: center;
   justify-content: center;
 }
+.button_arrow:hover {
+  background-color: $color-main-text-and-shadow;
+  box-shadow: 5px 5px 6px $color-main-text-and-shadow;
+}
 
 @media all and (min-width:768px)
 {
