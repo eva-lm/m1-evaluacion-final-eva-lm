@@ -1,0 +1,47 @@
+.button_arrow_up {
+    width: 45px;
+    height: 45px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    background-color: $color-light;
+    position: absolute;
+    transform: translateY(-20px) translateX(50vw);
+    display: flex;
+    justify-content: center;
+}
+.footer_container {
+    height: 465px;
+    background-color: $color-dark-midtone;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social_articles {
+    margin-top: 60px;
+    text-align: center;
+    text-decoration: none;
+    color: $color-light;
+    font-family: $font-family;
+    font-size: 16px;
+}
+.social_menu {
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $color-light;
+    font-family: $font-family;
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+}
+
+.social_small {
+    margin-top: 30px;
+    font-family: $font-family;
+    font-size: 14px;
+    color: $color-light;
+    text-align: center;
+}
