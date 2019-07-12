@@ -2,7 +2,7 @@
 .logo {
     margin-top: 0px;
     margin-left: 0px;
-  background-color: #0271bc;
+  background-color: $color-tertiary;
   z-index: 1;
   height: 44px;
   width: 44px;
@@ -26,7 +26,7 @@
 
 .list {
   list-style: none;
-  color: white;
+  color: $color-light;
   padding: 10px;
   margin: 0;
   margin-top: 284px;
@@ -36,14 +36,14 @@
 .one { 
   text-align: center;
   font-size: 42px;
-  font-family: $font-roboto-slab;
+  font-family: $font-family-second;
   line-height: 55px;
 }
 .twoo {
 
   text-align: center;
   font-size: 42px;
-  font-family: $font-roboto-slab;
+  font-family: $font-family-second;
   line-height: 55px;
   margin-bottom: 10px;
 }
@@ -52,7 +52,7 @@
   margin-top: 10px;
   text-align: center;
   font-size: 16px;
-  font-family: $font-roboto;
+  font-family: $font-family;
   margin-top: 10px;
   margin-bottom: 45px;
   

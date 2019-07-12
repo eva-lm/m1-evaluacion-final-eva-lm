@@ -1,69 +1,102 @@
-.main_container {
-   
+/* .section {
     margin: 0px;
     height: 376px;
     display: flex;
     flex-direction: column;
     padding: 30px 15px 45px 15px;
 }
-.main_texth1 {
+.section_text_h1 {
     font-size: 14px;
-    color: #8ccbea;
-    font-family: $font-roboto;
+    color: $color-secondary;
+    font-family: $font-family;
 }
-.main_texth2 {
+.section_text_h2 {
     margin-top: 1px;
     font-size: 24px;
-    color: #000000;
-    font-family: $font-roboto-slab;
+    color: $color-dark;
+    font-family: $font-family-second;
 }
-.main_text {
+.section_text {
     margin-top: 15px;
-    font-family: $font-roboto;
+    font-family: $font-family;
     font-size: 18px;
     line-height: 30px;
-    color: #4a4a4a;
+    color: $color-main-text-and-shadow;
     text-align: left;
-}
-.article_list {
-    list-style: none;
+} */
+
+.section {
+    margin: 0px;
+    height: 376px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 15px 45px 15px;
+
+    &_text_h1{
+        font-size: 14px;
+        color: $color-secondary;
+        font-family: $font-family;
+    }
+    &_text_h2 {
+        margin-top: 1px;
+        font-size: 24px;
+        color: $color-dark;
+        font-family: $font-family-second;
+    }
+    &_text {
+        margin-top: 15px;
+        font-family: $font-family;
+        font-size: 18px;
+        line-height: 30px;
+        color: $color-main-text-and-shadow;
+        text-align: left;
+    }
 }
 
 .button_go {
-    background-color: white;
-    color: #f26002;
+    background-color: $color-light;
+    color: $color-primary;
     font-size: 20px;
-    font-family: $font-roboto;
+    font-family: $font-family;
     margin-top: 30px;
     width: 76px;
     height: 45px;
     border-radius: 22.5px;
-    border: solid 2px #f26002;
+    border: solid 2px $color-primary;
 }
+.button_go:hover {
+    background-color: $color-primary;
+    border-radius: 8%;
+    color: $color-light;
+    box-shadow: 2px 4px 5px 3px $color-main-text-and-shadow;
+} 
+
+
 .article {
     padding-top: 30px;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 60px;
     height: 624px;
-    background-color: #eff9ff;
+    background-color: $color-light-blue;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 45px;
     grid-template-rows: 30px 93px 93px 93px 45px;
 }
 .article_reason {
-    font-family: $font-roboto-slab;
+    font-family: $font-family-second;
     font-size: 24px;
     text-align: center;
 }
-.reason_list {
-    font-family: $font-roboto-slab;
+
+.article_item {
+    font-family: $font-family-second;
     font-size: 18px;
     text-align: center;
 }
-.reason_item {
-    font-family: $font-roboto;
+.article_text {
+    font-family: $font-family;
     font-size: 18px;
     text-align: center;
 }
@@ -77,12 +110,105 @@
     width: 184px;
     height: 45px;
     border-radius: 22.5px;
-    background-color: #f26002;
-    font-family: $font-roboto;
+    background-color: $color-primary;
+    font-family: $font-family;
     font-size: 20px;
-    color: white;
+    color: $color-light;
+    transition: all 
+}
+.button_reason:hover {;
+    background-color: $color-light;
+    border: solid 2px $color-primary (55, 102, 202);
+    border-radius: 8%;
+    color: $color-primary;
+    box-shadow: 2px 4px 5px 3px $color-main-text-and-shadow;
 }
 
-/* CORREGIR TIPOGRAFIAASSSSS
-$font-roboto-slab: 'Roboto Slab', serif;
-$font-roboto: 'Roboto', sans-serif; */
+/* CORREGIR TIPOGRAFIAASSSSS 
+- hacer la TRANSICIONNNN
+ */
+
+
+@media all and (min-width:768px) {
+    .section {
+        height: 330px;
+        padding: 30px 39px 60px 39px;
+        
+        &_text_h2 {
+            font-size: 26px;
+            line-height: 1.73;
+        }
+        &_text {
+            margin-top: 30px;
+            font-size: 20px;
+            line-height: 1.5;
+        }
+    }
+    .button_go {
+        width: 91px;
+    }
+    .article {
+        padding-left: 35.7px;
+        padding-right: 40px;
+        height: 397px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        /* grid-gap: 45px; */
+        grid-template-rows: 45px 112px /* 68+14+30 */ 45px;
+    }
+    .article_principal {
+        grid-column: span 3;
+    }
+    .article_reason {
+        font-size: 26px;
+    }
+    .article_list {
+        grid-gap: 30px;
+    }
+    .article_item {
+        font-size: 24px;
+    }
+    .article_text {
+        font-size: 20px;
+    }
+    .button_box {
+        grid-column: span 3;
+        margin-top: 60px;
+    }
+    .button_reason {
+        width: 210px;
+    }
+}
+@media all and (min-width:1200px) {
+    .section {
+        height: 360px;
+        padding: 60px 275px;
+
+        &_text_h1{
+            font-size: 16px;
+        }
+        &_text_h2 {
+            font-size: 32px;
+            line-height: 1.41;
+        }
+    }
+    .button_go {
+        width: 160px;
+    }
+    .article {
+        padding-top: 60px;
+        padding-left: 81.2px;
+        padding-right: 85px;
+        height: 427px;
+    }
+    .article_reason {
+        font-size: 32px;
+    }
+    .article_text {
+        margin-top: 14px;
+    }
+    .button_reason {
+        width: 255px;
+    }
+}
+
