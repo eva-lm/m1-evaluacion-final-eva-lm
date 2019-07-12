@@ -64,6 +64,7 @@
     border-radius: 22.5px;
     border: solid 2px $color-primary;
     transition: all 3s;
+    cursor: pointer;
 }
 .button_go:hover {
     background-color: $color-primary;
@@ -116,6 +117,7 @@
     font-size: 20px;
     color: $color-light;
     transition: all 3s;
+    cursor: pointer;
 }
 .button_reason:hover {;
     background-color: $color-light;
@@ -124,11 +126,6 @@
     color: $color-primary;
     box-shadow: 2px 4px 5px 3px $color-main-text-and-shadow;
 }
-
-/* CORREGIR TIPOGRAFIAASSSSS 
-- hacer la TRANSICIONNNN
- */
-
 
 @media all and (min-width:768px) {
     .section {
@@ -180,7 +177,7 @@
         width: 210px;
     }
 }
-@media all and (min-width:1200px) {
+@media all and (min-width:1280px) {
     .section {
         height: 360px;
         padding: 60px 275px;

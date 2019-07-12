@@ -1,7 +1,6 @@
-
 .logo {
-    margin-top: 0px;
-    margin-left: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
   background-color: $color-tertiary;
   z-index: 1;
   height: 44px;
@@ -24,31 +23,22 @@
   align-items: center;
 }
 
-.list {
+/* .list {
   list-style: none;
   color: $color-light;
   padding: 10px;
   margin: 0;
   margin-top: 284px;
- 
 }
 
-.one { 
+.list_hero { 
   text-align: center;
   font-size: 42px;
   font-family: $font-family-second;
   line-height: 55px;
 }
-.twoo {
 
-  text-align: center;
-  font-size: 42px;
-  font-family: $font-family-second;
-  line-height: 55px;
-  margin-bottom: 10px;
-}
-
-.holi {
+.list_sub {
   margin-top: 10px;
   text-align: center;
   font-size: 16px;
@@ -56,6 +46,27 @@
   margin-top: 10px;
   margin-bottom: 45px;
   
+} */
+.list {
+  list-style: none;
+  color: $color-light;
+  padding: 10px;
+  margin: 0;
+  margin-top: 284px;
+  &_hero {
+    text-align: center;
+    font-size: 42px;
+    font-family: $font-family-second;
+    line-height: 55px;
+  }
+  &_sub {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-family: $font-family;
+    margin-top: 10px;
+    margin-bottom: 45px;
+  }
 }
 
 .button_arrow {
@@ -66,49 +77,41 @@
   display: flex;
   align-content: center;
   justify-content: center;
+  background-color: $color-light;
+  cursor: pointer;
 }
 .button_arrow:hover {
-  background-color: $color-main-text-and-shadow;
-  box-shadow: 5px 5px 6px $color-main-text-and-shadow;
+  box-shadow: 6px 6px 6px 5px $color-main-text-and-shadow;
 }
 
-@media all and (min-width:768px)
-{
-    .list {
-        margin-top: 384px;
-        margin-left: 39px;
-        margin-right: 39px; 
-    }
-    .one {
-        line-height: 106px;
-        font-size: 80px;
-    }
-    .twoo {
-        line-height: 106px;
-        font-size: 80px;
-    }
-    .holi {
-        margin-top: 20px;
-        font-size: 24px;
-    }
-    .button_arrow {
-        margin-bottom: 45;
-        margin-left: 362px;
-        margin-right: 361px;
-    }
+@media all and (min-width: 768px) {
+  .list {
+    margin-top: 384px;
+    margin-left: 39px;
+    margin-right: 39px;
+  }
+  .list_hero {
+    line-height: 106px;
+    font-size: 80px;
+  }
+  .list_sub {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+  .button_arrow {
+    margin-bottom: 45;
+    margin-left: 362px;
+    margin-right: 361px;
+  }
 }
 
-@media all and (min-width:1200px) {
-    .list {
-        margin-left: 275px;
-        margin-right: 275px;
-    }
-    .one {
-        line-height: 132px;
-        font-size: 100px;
-    }
-    .twoo {
-        line-height: 132px;
-        font-size: 100px;
-    }
+@media all and (min-width: 1280px) {
+  .list {
+    margin-left: 275px;
+    margin-right: 275px;
+  }
+  .list_hero {
+    line-height: 132px;
+    font-size: 100px;
+  }
 }
