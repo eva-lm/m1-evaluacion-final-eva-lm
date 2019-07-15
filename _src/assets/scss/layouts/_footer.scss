@@ -69,6 +69,11 @@ ul {
 .lovee {
   color: $color-primary;
 }
+.section_offer {
+  background-color: $color-primary;
+  color: $color-light;
+  display: none;
+}
 @keyframes intro {
   from {
     opacity: 1;
@@ -85,6 +90,7 @@ ul {
     transform: translateY(-20px);
   }
 }
+
 @media all and (min-width: 768px) {
   .footer_container {
     width: 100%;
@@ -121,6 +127,14 @@ ul {
   .social_small {
     margin-top: 45px;
     text-align: initial;
+  }
+
+  .section_offer {
+    display: block;
+  }
+  .section_container {
+    display: flex;
+    justify-content: space-between;
   }
 }
 @media all and (min-width: 1280px) {
