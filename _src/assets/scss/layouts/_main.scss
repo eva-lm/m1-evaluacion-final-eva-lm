@@ -119,9 +119,9 @@
     transition: all 3s;
     cursor: pointer;
 }
-.button_reason:hover {;
+.button_reason:hover {
     background-color: $color-light;
-    border: solid 2px $color-primary (55, 102, 202);
+    border: solid 2px $color-primary;
     border-radius: 8%;
     color: $color-primary;
     box-shadow: 2px 4px 5px 3px $color-main-text-and-shadow;
